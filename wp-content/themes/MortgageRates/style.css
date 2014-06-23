@@ -1281,12 +1281,18 @@ footer .show-xs ul li a {
   border-bottom: none;
 }
 
+.post:last-child:empty {
+  display: none;
+}
+
 .post > img {
+  border: 4px solid #e1e1e1;
+  border-radius: 50%;
   float: left;
   max-width: 25%;
 }
 
-.post > div {
+.post > img + div {
   width: 75%;
   padding-left: 14px;
   float: left;
@@ -1327,7 +1333,8 @@ footer .show-xs ul li a {
   margin-right: 0;
 }
 
-.blog-pagination > li > a {
+.blog-pagination > li > a,
+.blog-pagination > li > span {
   display: inline-block;
   background-color: #e1e1e1;
   border-radius: 50px;
@@ -1342,7 +1349,8 @@ footer .show-xs ul li a {
   background-color: #cccccc;
 }
 
-.blog-pagination > li.active > a {
+.blog-pagination > li.active > a,
+.blog-pagination > li > span.current {
   background-color: #8dc63f;
   color: #FFFFFF;
 }
