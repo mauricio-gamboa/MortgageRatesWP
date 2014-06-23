@@ -33,7 +33,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="logo" href="#"><img src="images/logo.png"></a>
+          <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img src="<?php echo THEME_DIR?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -72,14 +74,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-md-5 col-lg-5">
-          <a class="logo" href="">
-            <img src="images/logo.png">
+          <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img src="<?php echo THEME_DIR?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" />
           </a>
         </div>
         <div class="col-xs-7 col-sm-8 col-md-7 col-lg-7 hide-xs">
           <div class="row">
             <div class="col-sm-7 col-md-8 col-lg-8">
-              <img src="images/likes.png" />
+              <img src="<?php echo THEME_DIR?>/images/likes.png" />
             </div>
             <div class="col-sm-5 col-md-4 col-lg-4 contact">
               <span class="icon icon-phone">Call 1-877-653-1339</span>
