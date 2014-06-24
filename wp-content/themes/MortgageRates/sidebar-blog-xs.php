@@ -25,7 +25,7 @@
                 <h2>Save an Extra $100 Per Month to Apply to Your Mortgage</h2>
                 <p>Written by <a href="">Karina Romaine</a></p>
               </div>
-              <img src="images/viewed.png">
+              <img src="<?php echo THEME_DIR?>/images/viewed.png">
               <div class="excerpt">
                 <p>Making those monthly mortgage payments can be tough, especially during an economic recession...</p>
                 <a href="" class="arrow-1 link-green">Read More</a>
@@ -37,7 +37,7 @@
                 <h2>Save an Extra $100 Per Month to Apply to Your Mortgage</h2>
                 <p>Written by <a href="">Karina Romaine</a></p>
               </div>
-              <img src="images/viewed.png">
+              <img src="<?php echo THEME_DIR?>/images/viewed.png">
               <div class="excerpt">
                 <p>Making those monthly mortgage payments can be tough, especially during an economic recession...</p>
                 <a href="" class="arrow-1 link-green">Read More</a>
@@ -49,7 +49,7 @@
                 <h2>Save an Extra $100 Per Month to Apply to Your Mortgage</h2>
                 <p>Written by <a href="">Karina Romaine</a></p>
               </div>
-              <img src="images/viewed.png">
+              <img src="<?php echo THEME_DIR?>/images/viewed.png">
               <div class="excerpt">
                 <p>Making those monthly mortgage payments can be tough, especially during an economic recession...</p>
                 <a href="" class="arrow-1 link-green">Read More</a>
@@ -95,27 +95,27 @@
           <div class="widget author">
             <ul class="list-unstyled">
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
               <li>
-                <img src="images/user-1.png">
+                <img src="<?php echo THEME_DIR?>/images/user-1.png">
                 <a href="">Penelope Graham</a>
               </li>
             </ul>
@@ -159,21 +159,21 @@
           <div class="widget asked">
             <ul class="list-unstyled">
               <li>
-                <img src="images/ask-1.png">
+                <img src="<?php echo THEME_DIR?>/images/ask-1.png">
                 <div>
                   <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
                   <p>asked <strong>2 days</strong> ago by anonymous</p>
                 </div>
               </li>
               <li>
-                <img src="images/ask-1.png">
+                <img src="<?php echo THEME_DIR?>/images/ask-1.png">
                 <div>
                   <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
                   <p>asked <strong>2 days</strong> ago by anonymous</p>
                 </div>
               </li>
               <li>
-                <img src="images/ask-1.png">
+                <img src="<?php echo THEME_DIR?>/images/ask-1.png">
                 <div>
                   <a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a>
                   <p>asked <strong>2 days</strong> ago by anonymous</p>
