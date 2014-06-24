@@ -53,6 +53,10 @@ a:hover {
   color: #6bb309;
 }
 
+textarea {
+  resize: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #004993;
   font-weight: bold;
@@ -1290,6 +1294,7 @@ footer .show-xs ul li a {
   border-radius: 50%;
   float: left;
   max-width: 25%;
+  height: auto;
 }
 
 .post > img + div {
@@ -1594,9 +1599,13 @@ footer .show-xs ul li a {
 }
 
 .post .post-thumbnail {
+  border: 4px solid #e1e1e1;
+  border-radius: 50%;
   float: left;
-  margin-right: 15px;
+  height: auto;
   margin-bottom: 15px;
+  margin-right: 15px;
+  width: 20%;
 }
 
 .post-share,
@@ -1686,8 +1695,13 @@ footer .show-xs ul li a {
   border-bottom: none;
 }
 
-.comment p {
+.comment > div:last-child {
+  margin: 0;
+}
+
+.comment > * {
   line-height: 19px;
+  margin-bottom: 10px;
 }
 
 .comment h5 {
@@ -1706,7 +1720,7 @@ footer .show-xs ul li a {
   border-radius: 0 0 4px 4px;
 }
 
-.comments-form h4 {
+.comments-form h3 {
   margin-top: 0;
   color: #004993;
   font-size: 20px;
