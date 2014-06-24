@@ -38,3 +38,9 @@ if (!function_exists('morgageRates_setup')) :
   }
 endif; // morgageRates_setup
 add_action('after_setup_theme', 'morgageRates_setup');
+
+function get_related_author_posts() {
+  global $authordata, $post;
+  $authors_posts = get_posts( array( 'author' => $authordata->ID, 'post__not_in' => array( $post->ID ), 'posts_per_page' => 4 ) );
+  return $authors_posts;
+}
