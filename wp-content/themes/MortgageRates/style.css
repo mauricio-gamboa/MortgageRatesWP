@@ -223,6 +223,27 @@ header .icon-phone {
 }
 
 /*Buttons and Links*/
+input#submit {
+  box-shadow: 1px 1px 3px -2px #000000;
+  font-size: 13px;
+  font-weight: bold;
+  display:inline-block;
+  margin-bottom:0;
+  text-align:center;
+  vertical-align:middle;
+  cursor:pointer;
+  background-image:none;
+  border:1px solid transparent;
+  white-space:nowrap;
+  padding:6px 12px;font-size:14px;
+  line-height:1.42857143;border-radius:4px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  border: 1px solid #55890d;
+}
+
 .btn {
   box-shadow: 1px 1px 3px -2px #000000;
   font-size: 13px;
@@ -239,7 +260,8 @@ header .icon-phone {
 .nav-container .active > a, 
 .nav-container .active > a:hover,
 .navbar-collapse .navbar-nav li.active a,
-.navbar-collapse .navbar-nav li.active a:hover {
+.navbar-collapse .navbar-nav li.active a:hover,
+input#submit {
   background: #a8e25c;
   background: -moz-linear-gradient(top,  #a8e25c 0%, #8ec740 99%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a8e25c), color-stop(99%,#8ec740));
@@ -253,7 +275,8 @@ header .icon-phone {
 
 .btn.green-gradient:hover,
 .news-box .title a:hover,
-.more-info-box .container > a:hover {
+.more-info-box .container > a:hover,
+input#submit:hover {
   background: #92d347;
   background: -moz-linear-gradient(top,  #92d347 0%, #7bba31 99%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#92d347), color-stop(99%,#7bba31));
@@ -458,6 +481,7 @@ header .icon-phone {
   background-color: #f35157;
 }
 
+.comment-reply-link,
 .icon-5 {
   background: url("images/icon-5.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
   display: inline-block;
@@ -1303,16 +1327,23 @@ footer .show-xs ul li a {
   float: left;
 }
 
+.author-info .post > img {
+  border: 8px solid #d8ecf6;
+  padding: 4px;
+  background-color: #abdffa;
+  width: 15%;
+}
+
+.author-info .post {
+  min-height: 146px;
+}
+
 .post p {
   line-height: 21px;
 }
 
 .post h2 {
   margin-top: 0;
-}
-
-.post .meta {
-  overflow: hidden;
 }
 
 .post .meta a.link-green {
@@ -1624,7 +1655,7 @@ footer .show-xs ul li a {
 .author-info .nav > li > a {
   background-color: #FFFFFF;
   border-radius: 0;
-  border: none;
+  border: medium none !important;
   color: #004993;
   font-weight: bold;
   line-height: 45px;
@@ -1652,6 +1683,7 @@ footer .show-xs ul li a {
 }
 
 .author-info .nav-tabs > li {
+  border: medium none !important;
   margin: 0;
 }
 
@@ -1671,6 +1703,10 @@ footer .show-xs ul li a {
 .author-info .carousel-indicators li.active {
   background-color: #a3de57;
   border: 1px solid #a3de57;
+}
+
+.author-info .bio-wrapper {
+  padding: 20px;
 }
 .post .date {
   color: #898989;
@@ -1693,6 +1729,7 @@ footer .show-xs ul li a {
 
 .comment:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .comment > div:last-child {
@@ -1704,14 +1741,23 @@ footer .show-xs ul li a {
   margin-bottom: 10px;
 }
 
-.comment h5 {
-  margin: 0;
+.comment h5,
+.comment cite,
+.comment cite a {
   font-size: 15px;
-  margin-bottom: 10px;
+  color: #004993;
+  font-weight: bold;
 }
 
-.comment.reply {
+.comment > .comment {
+  border-bottom: 0 none;
+  border-top: 1px solid #ebebeb;
+  margin: 20px 0 0;
   padding-left: 5%;
+}
+
+.comment > .comment:last-child {
+  padding-bottom: 0;
 }
 
 .comments-form {
@@ -1726,6 +1772,10 @@ footer .show-xs ul li a {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+
+.comment .says {
+  display: none;
 }
 
 /* Subpage ----------- */
