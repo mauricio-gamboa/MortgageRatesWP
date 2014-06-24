@@ -61,9 +61,9 @@
               </ul>
             </li>
           </ul>
-          <form class="navbar-form navbar-left" role="search">
+          <form action="<?php bloginfo('siteurl'); ?>" method="get" class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+              <input type="search" class="form-control" placeholder="Search" id="s" name="s" required>
             </div>
           </form>
         </div><!-- /.navbar-collapse -->
