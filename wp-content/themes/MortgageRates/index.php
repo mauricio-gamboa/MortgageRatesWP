@@ -3,9 +3,7 @@
   <div class="container">
     <div class="page-title">
       <h1>Blog Page</h1>
-      <form class="search-form hide-xs">
-        <div><input class="form-control" type="text" placeholder="Search" /></div>
-      </form>
+       <?php get_search_form(); ?>
     </div>
   </div>
 </div>
