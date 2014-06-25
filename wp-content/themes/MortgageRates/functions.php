@@ -46,32 +46,26 @@ function get_related_author_posts() {
   return $authors_posts;
 }
 
-function get_search_results_counter() {
-  /* Search Total Count */
-  $allsearch = &new WP_Query("s=$s&showposts=-1");
-  $count = $allsearch->post_count;
-  wp_reset_query();
+function get_features() {
+  global $post;
+  $features = get_posts(array('post_type'=> 'features', 'posts_per_page' => -1));
+  return $features;
+}
 
-  /* Number of posts per page and page number */
-  $num_of_posts = 2;
-  $pageNumber = (get_query_var('paged')) ? get_query_var('paged') : 1;
+function get_steps() {
+  global $post;
+  $steps = get_posts(array('post_type'=> 'steps', 'posts_per_page' => -1));
+  return $steps;
+}
 
-  /* Showing the lower post value */
-  $n = ($pageNumber-1) * $num_of_posts;
-  $n = $n+1;
+function get_team_members() {
+  global $post;
+  $team_members = get_posts(array('post_type'=> 'team_members', 'posts_per_page' => -1));
+  return $team_members;
+}
 
-  /* Showing the higher/highest post value */
-  $m = $pageNumber * $num_of_posts;
-  
-  if($m > $count){
-    // if m is bigger than the count var, it sets the
-    // highest value equal to the count, this is for the last page of results
-    $m = $count;
-  }
-
-  if($count > 0){
-    return '<span class="hide-xs">Showing '.$n.'-'.$m.' of '.$count.' Results</span>';
-  } else {
-    return '<span class="hide-xs">No Results</span>';
-  }
+function get_contact_page() {
+  global $post;
+  $contact_page = get_posts(array('post_type'=> 'page', 'name' => 'contact', 'posts_per_page' => 1));
+  return $contact_page;
 }

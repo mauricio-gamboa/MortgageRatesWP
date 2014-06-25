@@ -5,6 +5,7 @@
   $twitter = get_post_meta(get_the_ID(), 'twitter', true);
   $linkedin = get_post_meta(get_the_ID(), 'linkedin', true);
   $youtube = get_post_meta(get_the_ID(), 'youtube', true);
+  $address = get_post_meta(get_the_ID(), 'address', true);
 ?>
 
 <div class="col-sm-6 col-md-4 col-lg-4">
@@ -35,7 +36,7 @@
   <div>
     <h2>Address</h2>
     <address>
-      <?php echo get_post_meta(get_the_ID(), 'address', true); ?>
+      <?if ($address): echo $address; endif; ?>
     </address>
   </div>
   <div class="show-s">

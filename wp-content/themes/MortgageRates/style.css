@@ -72,6 +72,10 @@ blockquote {
   margin-bottom: 10px;
 }
 
+address {
+  margin: 0;
+}
+
 .general-padding {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -989,27 +993,27 @@ input#submit:hover {
   border-bottom: 1px solid;
 }
 
-.home-tip-1 h4 {
+.home-tip-0 h4 {
   border-color: #f7941d;
 }
 
-.home-tip-2 h4 {
+.home-tip-1 h4 {
   border-color: #8dc63f;
 }
 
-.home-tip-3 h4 {
+.home-tip-2 h4 {
   border-color: #a864a8;
 }
 
-.home-tip-4 h4 {
+.home-tip-3 h4 {
   border-color: #79bafc;
 }
 
-.home-tip-5 h4 {
+.home-tip-4 h4 {
   border-color: #f06eaa;
 }
 
-.home-tip-6 h4 {
+.home-tip-5 h4 {
   border-color: #5bc4bf;
 }
 
@@ -2908,6 +2912,15 @@ footer .show-xs ul li a {
   position: relative;
 }
 
+.about-top > h1,
+.about-top > h2,
+.about-top > h3,
+.about-top > h4,
+.about-top > h5,
+.about-top > h6 {
+  margin-top: 0;
+}
+
 .about-top > img {
   left: -25px;
   position: absolute;
@@ -2962,7 +2975,12 @@ footer .show-xs ul li a {
 }
 
 .people .person img {
+  background-color: #abdffa;
+  border: 10px solid #d8ecf6;
+  border-radius: 50%;
+  padding: 5px;
   width: 100%;
+  height: auto;
 }
 
 .people .person .social {
@@ -2996,6 +3014,9 @@ footer .show-xs ul li a {
   margin-bottom: 20px;
 }
 
+.contact-about {
+  margin-bottom: 20px;
+}
 /* Questions Page ----------- */
 .questions-form {
   background-color: #e4f5ff;
@@ -3360,7 +3381,7 @@ footer .show-xs ul li a {
   }
 
   .about-top {
-    padding-bottom: 80%;
+    padding-bottom: 85%;
   }
   .about-top > img {
     bottom: 0;
@@ -3369,10 +3390,11 @@ footer .show-xs ul li a {
   }
 
   .people .person {
-    padding-bottom: 80px;
+    padding-bottom: 90px;
     position: relative;
     text-align: center;
   }
+
   .people .person img {
     width: auto;
   }
