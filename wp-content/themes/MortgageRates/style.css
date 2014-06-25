@@ -1661,6 +1661,14 @@ footer .show-xs ul li a {
   padding: 20px;
 }
 
+.post-share {
+  padding: 0 20px;
+}
+
+.detail-page .post-share {
+  padding: 20px;
+}
+
 .detail-page .post-share,
 .detail-page .comments-wrapper .title {
   border-bottom: 1px solid #ebebeb;
@@ -1930,6 +1938,10 @@ footer .show-xs ul li a {
   border-bottom: medium none;
   border-top: 1px solid #e9e9e9;
   padding-bottom: 0;
+}
+
+.search-page .navigation-wrapper:last-child {
+  margin-top: 15px;
 }
 
 .navigation-wrapper > ul {
