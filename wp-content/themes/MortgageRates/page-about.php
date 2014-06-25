@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 <div id="page-title-wrapper">
   <div class="container">
-    <div class="page-title">
+    <div class="page-title clearfix">
       <?php the_title('<h1>','</h1>') ?>
       <?php get_search_form(); ?>
     </div>

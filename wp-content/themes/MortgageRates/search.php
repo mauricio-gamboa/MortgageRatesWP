@@ -30,7 +30,7 @@
 <?php get_header(); ?>
 <div id="page-title-wrapper">
   <div class="container">
-    <div class="page-title">
+    <div class="page-title clearfix">
       <h1>Search</h1>
       <?php get_search_form(); ?>
     </div>

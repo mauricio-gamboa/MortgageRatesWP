@@ -20,49 +20,62 @@
   <footer class="general-padding">
     <div class="container hide-xs">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          <h6>Home</h6>
-          <ul class="list-unstyled">
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          <h6>Home</h6>
-          <ul class="list-unstyled">
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          <h6>Home</h6>
-          <ul class="list-unstyled">
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          <h6>Home</h6>
-          <ul class="list-unstyled">
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-            <li><a href="">Apply Online</a></li>
-          </ul>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-lists">
+          <div>
+            <h6>Home</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Home</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Home</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Home</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Home</h6>
+            <ul class="list-unstyled">
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+              <li><a href="">Apply Online</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
