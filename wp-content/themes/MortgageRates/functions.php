@@ -48,13 +48,13 @@ function get_related_author_posts() {
 
 function get_features() {
   global $post;
-  $features = get_posts(array('post_type'=> 'features', 'posts_per_page' => -1));
+  $features = get_posts(array('post_type'=> 'features', 'posts_per_page' => 6));
   return $features;
 }
 
 function get_steps() {
   global $post;
-  $steps = get_posts(array('post_type'=> 'steps', 'posts_per_page' => -1));
+  $steps = get_posts(array('post_type'=> 'steps', 'posts_per_page' => 3));
   return $steps;
 }
 
@@ -68,4 +68,10 @@ function get_contact_page() {
   global $post;
   $contact_page = get_posts(array('post_type'=> 'page', 'name' => 'contact', 'posts_per_page' => 1));
   return $contact_page;
+}
+
+function get_works_items() {
+  global $post;
+  $works_items = get_posts(array('post_type'=> 'works_items', 'posts_per_page' => 5));
+  return $works_items;
 }
