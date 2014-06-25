@@ -53,6 +53,10 @@ a:hover {
   color: #6bb309;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 textarea {
   resize: none;
 }
@@ -60,6 +64,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   color: #004993;
   font-weight: bold;
+}
+
+blockquote {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .general-padding {
@@ -1298,6 +1308,10 @@ footer .show-xs ul li a {
   margin-bottom: 0;
 }
 
+.page + .post-share {
+  padding-top: 0;
+}
+
 /* Blog Page ----------- */
 .post {
   overflow: hidden;
@@ -1800,10 +1814,14 @@ footer .show-xs ul li a {
 
 .sub-page h2,
 .search-page h2 {
-  font-size: 22px;
   border-bottom: 1px solid #efefef;
-  padding: 0px 20px 15px 20px;
-  margin: 0 -20px;
+  font-size: 22px;
+  margin: 0 -20px 15px;
+  padding: 0 20px 15px;
+}
+
+.search-page h2 {
+  margin-bottom: 0;
 }
 
 .rates-page h2 {
@@ -1819,6 +1837,10 @@ footer .show-xs ul li a {
   padding: 15px 20px;
   margin: 0 -20px;
   border-bottom: 1px solid #efefef;
+}
+
+.sub-page h2 + section {
+  padding-top: 0;
 }
 
 .sub-page section:last-child {
