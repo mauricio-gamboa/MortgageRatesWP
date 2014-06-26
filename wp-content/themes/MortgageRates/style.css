@@ -2824,8 +2824,9 @@ body .page + .post-share {
 /* First Time Page ----------- */
 
 .banner img {
-  width: 100%;
   border-radius: 5px;
+  height: auto;
+  width: 100%;
 }
 
 .gallery .title {
@@ -2896,8 +2897,19 @@ body .page + .post-share {
   font-weight: normal;
 }
 
+.faqs.posts .faq > img {
+  border: 5px solid #e1f5ff;
+  border-radius: 50%;
+  height: auto;
+  width: 15%;
+}
+
 .faqs.posts .faq > div {
-  width: 90%;
+  width: 100%;
+}
+
+.faqs.posts .faq > img + div {
+  width: 85%;
 }
 
 .faqs.posts .faq h3 {
