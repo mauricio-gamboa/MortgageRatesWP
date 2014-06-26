@@ -81,3 +81,9 @@ function get_testimonials($number) {
   $testimonials = get_posts(array('post_type'=> 'testimonials', 'posts_per_page' => $number));
   return $testimonials;
 }
+
+function get_calculators() {
+  global $post;
+  $calculators = get_posts(array('post_type'=> 'calculators', 'posts_per_page' => 4));
+  return $calculators;
+}

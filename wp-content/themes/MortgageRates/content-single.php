@@ -12,10 +12,7 @@
   </div>
 </article>
 
-<div class="post-share">
-  Share Article
-  <img src="<?php echo THEME_DIR?>/images/share-1.png">
-</div>
+<?php get_sidebar('include-share'); ?>
 
 <?php $author_posts = get_related_author_posts(); ?>
 

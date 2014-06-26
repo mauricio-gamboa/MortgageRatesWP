@@ -57,8 +57,8 @@
       </div>
       <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="social">
-          <?if ($twitter): ?><a href="<?php echo $twitter; ?>" class="twitter"></a><?php endif; ?>
-          <?if ($linkedin): ?><a href="<?php echo $linkedin; ?>" class="linkedin"></a><?php endif; ?>
+          <?if ($twitter): ?><a href="<?php echo $twitter; ?>" class="twitter" target="_blank"></a><?php endif; ?>
+          <?if ($linkedin): ?><a href="<?php echo $linkedin; ?>" class="linkedin" target="_blank"></a><?php endif; ?>
         </div>
         <?php the_title('<h4>','</h4>')?>
         <?if ($position): ?><h5><?php echo $position; ?></h5><?php endif; ?>
