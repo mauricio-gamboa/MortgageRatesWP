@@ -32,9 +32,6 @@ if (!function_exists('morgageRates_setup')) :
   function morgageRates_setup() {
     if ( function_exists('add_theme_support') ) {
       add_theme_support('post-thumbnails');
-      set_post_thumbnail_size(150, 150);
-      add_image_size('blog', 200, 200, true);
-      add_theme_support( 'html5', array( 'search-form' ) );
     }
   }
 endif; // morgageRates_setup
@@ -86,4 +83,10 @@ function get_calculators() {
   global $post;
   $calculators = get_posts(array('post_type'=> 'calculators', 'posts_per_page' => 4));
   return $calculators;
+}
+
+function get_my_posts($number) {
+  global $post;
+  $my_posts = get_posts(array('posts_per_page' => $number));
+  return $my_posts;
 }
