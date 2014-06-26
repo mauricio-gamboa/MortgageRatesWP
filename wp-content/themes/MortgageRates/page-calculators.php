@@ -7,14 +7,19 @@
     </div>
   </div>
 </div>
-<div class="general-padding">
+<div class="general-padding calculators-page">
   <div class="container">
     <div class="row">
       <?php get_sidebar(); ?>
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        
         <?php while ( have_posts() ) : the_post();
-          get_template_part( 'content', 'how-it-works' );
+        get_template_part( 'content', 'calculators' );
         endwhile; ?>
+
+        <?php get_sidebar('include-mortgage-help'); ?>
+        <?php get_sidebar('include-recent-qa'); ?>
+        <?php get_sidebar('include-share'); ?>
       </div>
       <?php get_sidebar('xs'); ?>
     </div>

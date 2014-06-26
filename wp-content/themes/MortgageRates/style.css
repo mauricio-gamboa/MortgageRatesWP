@@ -1306,18 +1306,18 @@ footer .show-xs ul li a {
 }
 
 /* Page General ----------- */
-.page {
+body .page {
   border: 1px solid #e1e1e1;
   box-shadow: 0 0 3px 0px #e1e1e1;
   border-radius: 5px;
   margin-bottom: 20px;
 }
 
-.page:last-child {
+body .page:last-child {
   margin-bottom: 0;
 }
 
-.page + .post-share {
+body .page + .post-share {
   padding-top: 0;
 }
 
@@ -2592,9 +2592,10 @@ footer .show-xs ul li a {
 }
 
 .single-calculator img {
-  width: 100%;
-  border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: auto;
+  width: 100%;
 }
 
 .single-calculator .btn {
