@@ -93,7 +93,7 @@
   </footer>
   <div id="bottom">
     <div class="container">
-      <p class="pull-left">Copyright &copy; 2014 MortgageRates.ca. All Rights Reserved</p>
+      <p class="pull-left">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved</p>
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="pull-right hide-xs">
         <img src="<?php echo THEME_DIR?>/images/logo-footer.png" alt="<?php bloginfo( 'name' ); ?>" />
       </a>

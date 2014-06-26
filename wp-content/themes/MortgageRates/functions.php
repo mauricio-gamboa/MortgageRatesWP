@@ -75,3 +75,9 @@ function get_works_items() {
   $works_items = get_posts(array('post_type'=> 'works_items', 'posts_per_page' => 5));
   return $works_items;
 }
+
+function get_testimonials($number) {
+  global $post;
+  $testimonials = get_posts(array('post_type'=> 'testimonials', 'posts_per_page' => $number));
+  return $testimonials;
+}

@@ -3471,8 +3471,8 @@ footer .show-xs ul li a {
   }
 
   .apply-online .home-top ul {
-    border-top: 1px solid #3A91DC;
-    margin: 0 -15px;
+    border-top: 1px solid #3a91dc;
+    margin: 15px -15px 0;
     padding: 10px 15px;
   }
 
