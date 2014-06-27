@@ -275,6 +275,10 @@ input#submit {
 .nav-container .active > a:hover,
 .navbar-collapse .navbar-nav li.active a,
 .navbar-collapse .navbar-nav li.active a:hover,
+.nav-container .current-menu-item > a, 
+.nav-container .current-menu-item > a:hover,
+.navbar-collapse .navbar-nav li.current-menu-item a,
+.navbar-collapse .navbar-nav li.current-menu-item a:hover,
 input#submit {
   background: #a8e25c;
   background: -moz-linear-gradient(top,  #a8e25c 0%, #8ec740 99%);
@@ -595,7 +599,8 @@ input#submit:hover {
   text-decoration: none;
 }
 
-.nav-container nav ul li.active a {
+.nav-container nav ul li.active > a,
+.nav-container nav ul li.current-menu-item > a {
   color: #FFFFFF !important;
 }
 
@@ -1672,6 +1677,18 @@ body .page + .post-share {
 
 .post-share {
   padding: 0 20px;
+  position: relative;
+}
+
+.post-share > span {
+  position: relative;
+  top: -5px;
+}
+
+.post-share > span .stButton .stFb, 
+.post-share > span .stButton .stTwbutton, 
+.post-share > span .stButton .stMainServices {
+  height: 22px;
 }
 
 .detail-page .post-share {
@@ -3195,7 +3212,15 @@ body .page + .post-share {
 }
 
 /* XS ----------- */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .hide-xs {
+    display: none !important;
+  }
+
+  .show-xs {
+    display: block;
+  }
+
   aside {
     margin-top: 20px;
   }
@@ -3227,16 +3252,10 @@ body .page + .post-share {
     padding-top: 20px;
   }
 
-  .hide-xs {
-    display: none !important;
-  }
-
-  .show-xs {
-    display: block;
-  }
   .navbar-brand {
     width: 50%;
   }
+
   .navbar-brand img {
     width: 100%;
   }
@@ -3747,6 +3766,11 @@ body .page + .post-share {
 
   .big-step:nth-child(5) {
     padding-top: 246px;
+  }
+
+  .post-share > span {
+    display: block;
+    top: 0;
   }
 }
 

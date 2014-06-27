@@ -9,33 +9,7 @@ $bottom_content = get_post_meta(get_the_ID(), 'bottom-content', true);
 <div id="top" class="home apply-online">
   <div class="nav-container hide-xs">
     <div class="container">
-      <nav>
-        <ul class="clearfix">
-          <li class="active"><a href="#">Home</a></li>
-          <li>
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mortgage Rates <b class="caret"></b></a>
-            <ul>
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mortgage Calculators <b class="caret"></b></a>
-            <ul>
-              <li class="active"><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Apply Online</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
+      <?php wp_nav_menu(array( 'menu' => 'header','container' => 'nav','menu_class' => 'clearfix')); ?>
     </div>
   </div>
   <div class="home-top">

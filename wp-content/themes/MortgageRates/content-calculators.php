@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-8 col-lg-8">
           <?php the_title('<h3><span class="year">icon</span>','</h3>'); ?>
-          <?php the_content(); ?>
+          <?php the_excerpt(); ?>
         </div>
         <div class="col-sm-12 col-md-4 col-lg-4 hide-xs">
           <a class="btn green-gradient" href="<?php the_permalink(); ?>">Start Now!</a>

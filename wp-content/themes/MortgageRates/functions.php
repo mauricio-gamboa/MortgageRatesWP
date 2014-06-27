@@ -14,6 +14,8 @@ function enqueue_styles() {
   wp_enqueue_style('bootstrapcss');
 
   wp_enqueue_style('mortgageRates-style', get_stylesheet_uri(), array('bootstrapcss'), '1', 'all');
+
+  require_once('wp_bootstrap_navwalker.php');
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_styles');
@@ -33,6 +35,11 @@ if (!function_exists('morgageRates_setup')) :
     if ( function_exists('add_theme_support') ) {
       add_theme_support('post-thumbnails');
     }
+
+    // This theme uses wp_nav_menu() in two locations.
+    register_nav_menus( array('primary'   => __( 'Top primary menu')));
+
+    add_post_type_support('page', 'excerpt');
   }
 endif; // morgageRates_setup
 add_action('after_setup_theme', 'morgageRates_setup');
@@ -81,7 +88,7 @@ function get_testimonials($number) {
 
 function get_calculators() {
   global $post;
-  $calculators = get_posts(array('post_type'=> 'calculators', 'posts_per_page' => 4));
+  $calculators = get_posts(array('post_type'=> 'page', 'post_parent' => $post->ID, 'posts_per_page' => 4));
   return $calculators;
 }
 
