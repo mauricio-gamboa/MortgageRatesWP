@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Calculators Page
+*/
+
+get_header(); ?>
 <div id="page-title-wrapper">
   <div class="container">
     <div class="page-title clearfix">
