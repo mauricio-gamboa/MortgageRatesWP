@@ -97,3 +97,15 @@ function get_my_posts($number) {
   $my_posts = get_posts(array('posts_per_page' => $number));
   return $my_posts;
 }
+
+function get_home_logos() {
+  global $post;
+  $home_logos = get_posts(array('post_type'=> 'home_logos', 'posts_per_page' => 8));
+  return $home_logos;
+}
+
+function get_posts_by_category($categoryName, $number) {
+  global $post;
+  $posts_by_category = get_posts(array('category_name'=> $categoryName, 'posts_per_page' => $number));
+  return $posts_by_category;
+}
