@@ -1,4 +1,9 @@
 <?php $testimonials = get_testimonials(3); ?>
+<?php $home_logos = get_home_logos(); ?>
+<?php $steps = get_steps(); ?>
+<?php $feautures = get_features(); ?>
+<?php $news_posts = get_posts_by_category('news', 3); ?>
+<?php $mortgage_help_posts = get_posts_by_category('mortgage-help', 3); ?>
 
 <?php get_header('home'); ?>
 <div id="top" class="home">
@@ -37,23 +42,25 @@
     </div>
   </div>
 </div>
+
+<!-- Home Brokers and Banks Logos -->
+<?php if($home_logos): ?>
 <div id="banks-logos" class="general-padding">
   <div class="container">
     <h4>Compare Mortgage Rates from 100+ Banks and Brokers, including:</h4>
     <div class="row">
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-1.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-2.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-3.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-4.png" alt=""></div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-5.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-6.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-7.png" alt=""></div>
-      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><img src="<?php echo THEME_DIR?>/images/brands-8.png" alt=""></div>
+      <?php foreach ( $home_logos as $key=>$post ) : setup_postdata( $post ); ?>
+      <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+        <?php if (has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
+      </div>
+      <?php endforeach; wp_reset_postdata(); ?>
     </div>
   </div>
 </div>
+<?php endif; ?>
+<!-- End of Home Brokers and Banks Logos -->
+
+<!-- RatesHub API Content -->
 <div id="news" class="general-padding">
   <div class="container">
     <div class="row">
@@ -116,6 +123,8 @@
     </div>
   </div>
 </div>
+<!-- End of RatesHub API Content -->
+
 <div class="more-info-box general-padding">
   <div class="container">
     <h2>MortgageRates.ca &bull; Canada's Best Mortgage Rates</h2>
@@ -123,71 +132,35 @@
     <a href="" class="link-green">Read more <b class="caret"></b></a>
   </div>
 </div>
+
+<!-- Steps and Features -->
+<?php if($steps and $feautures): ?>
 <div id="home-tips" class="general-padding">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <article class="home-tip home-tip-1">
-          <img src="<?php echo THEME_DIR?>/images/tip-1.png" >
+      
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <?php foreach ( $feautures as $key=>$post ) : setup_postdata( $post ); ?>
+        <article class="home-tip home-tip-<?php echo $key; ?>">
+          <?php if (has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
           <div>
-            <h4>Unbiased Advise</h4>
-            <p>We are not a broker or a lender. We simply provide a platform for you to compare providers.</p>
+            <?php the_title('<h4>','</h4>'); ?>
+            <?php the_content(); ?>
           </div>
         </article>
-        <article class="home-tip home-tip-2">
-          <img src="<?php echo THEME_DIR?>/images/tip-2.png" >
-          <div>
-            <h4>Save up to $250 / month</h4>
-            <p>Save thousands on your mortgage by shopping around for the best rate.</p>
-          </div>
-        </article>
-        <article class="home-tip home-tip-3">
-          <img src="<?php echo THEME_DIR?>/images/tip-3.png" >
-          <div>
-            <h4>Undersand your Mortgage</h4>
-            <p>Transparent, easy-to-understand, and complete mortgage information.</p>
-          </div>
-        </article>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <article class="home-tip home-tip-4">
-          <img src="<?php echo THEME_DIR?>/images/tip-4.png" >
-          <div>
-            <h4>Mortgage Calculators</h4>
-            <p>Evaluate how much you can afford and calculate the total cost of home ownership.</p>
-          </div>
-        </article>
-        <article class="home-tip home-tip-5">
-          <img src="<?php echo THEME_DIR?>/images/tip-5.png" >
-          <div>
-            <h4>Lowest rates. Period.</h4>
-            <p>Only  the most competitive banks and mortgage brokes make the cut.</p>
-          </div>
-        </article>
-        <article class="home-tip home-tip-6">
-          <img src="<?php echo THEME_DIR?>/images/tip-6.png" >
-          <div>
-            <h4>Free, No obligation Service</h4>
-            <p>We provide this all at no cost to you. That's right, it's free!</p>
-          </div>
-        </article>
-      </div>
+        <?php endforeach; wp_reset_postdata(); ?>
+      </div>      
+      
       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <div id="how-it-works">
           <h5>How It Works</h5>
           <ul class="list-unstyled">
+            <?php foreach ( $steps as $key=>$post ) : setup_postdata( $post ); ?>
             <li>
-              <span>1</span>
-              <div><strong>Find Rates.</strong> Search and compare the best mortgage rates in Canada.</div>
+              <span><?php echo $key + 1;?></span>
+              <div><?php the_title('<strong>','.</strong>')?> <?php echo get_the_content(); ?></div>
             </li>
-            <li>
-              <span>2</span>
-              <div><strong>Apply Online.</strong> Apply for a mortgage rate from the comfort of your own home.</div>
-            </li>
-            <li>
-              <span>3</span>
-              <div><strong>Get your Free Quote.</strong> Receive a personalized mortgage quote in as fast as 1 hour!</div>
-            </li>
+            <?php endforeach; wp_reset_postdata(); ?>
             <li><a class="btn green-gradient">Get Started Now!</a></li>
           </ul>
         </div>
@@ -195,73 +168,57 @@
     </div>
   </div>
 </div>
+<?php endif; ?>
+<!-- End of Steps and Features -->
+
+<!-- Posts of the categories: Mortgage Help & News -->
+<?php if($news_posts and $mortgage_help_posts):?>
 <div id="home-articles" class="general-padding">
   <div class="container">
     <div class="row">
+      
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <h5><span class="ctm-icon icon-1"></span>Mortgage Help</h5>
-        <article class="home-article home-article-1">
-          <img src="<?php echo THEME_DIR?>/images/article-1.png" >
+        <?php foreach ( $mortgage_help_posts as $key=>$post ) : setup_postdata( $post ); ?>
+        <article class="home-article home-article-<?php echo $key+1; ?>">
+          <?php if (has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
           <div>
-            <h4>Fixed vs. Variable Mortgage Rates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
+            <?php the_title('<h4>','</h4>'); ?>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="arrow-1 link-green">Read More</a>
           </div>
         </article>
-        <article class="home-article home-article-2">
-          <img src="<?php echo THEME_DIR?>/images/article-2.png" >
-          <div>
-            <h4>Fixed vs. Variable Mortgage Rates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
-          </div>
-        </article>
-        <article class="home-article home-article-3">
-          <img src="<?php echo THEME_DIR?>/images/article-3.png" >
-          <div>
-            <h4>Fixed vs. Variable Mortgage Rates</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
-          </div>
-        </article>
+        <?php endforeach; wp_reset_postdata(); ?>
         <a href="" class="arrow-1 link-green">View More Articles</a>
       </div>
+      
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <h5><span class="ctm-icon icon-2"></span>Latest News</h5>
+        <?php foreach ( $mortgage_help_posts as $key=>$post ) : setup_postdata( $post ); ?>
         <article class="home-article home-article-6">
-          <img src="<?php echo THEME_DIR?>/images/article-4.png" >
+          <?php if (has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
           <div>
-            <h4>Three Tips to Spruce Up Credit</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
+            <?php the_title('<h4>','</h4>'); ?>
+            <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>" class="arrow-1 link-green">Read More</a>
           </div>
         </article>
-        <article class="home-article home-article-6">
-          <img src="<?php echo THEME_DIR?>/images/article-5.png" >
-          <div>
-            <h4>Three Tips to Spruce Up Credit</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
-          </div>
-        </article>
-        <article class="home-article home-article-6">
-          <img src="<?php echo THEME_DIR?>/images/article-6.png" >
-          <div>
-            <h4>Three Tips to Spruce Up Credit</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt eget dolor vel tristique. Curabitur bibendum arcu non arcu porta, eget dictum...</p>
-            <a href="" class="arrow-1 link-green">Read More</a>
-          </div>
-        </article>
+        <?php endforeach; wp_reset_postdata(); ?>
         <a href="" class="arrow-1 link-green">View More Articles</a>
       </div>
     </div>
+
   </div>
 </div>
+<?php endif; ?>
+<!-- end of Posts of the categories: Mortgage Help & News -->
+
+<!-- Testimonials -->
+<?php if($testimonials): ?>
 <div id="testimonials" class="general-padding">
   <div class="container hide-xs">
     <h5>Join the 3 Million Canadians who saved by comparing the Market</h5>
     <div class="row">
-      <?php if($testimonials): ?>
       <?php foreach ( $testimonials as $key=>$post ) : setup_postdata( $post ); ?>
       <?php $person = get_post_meta(get_the_ID(), 'person', true); $place = get_post_meta(get_the_ID(), 'place', true); ?>
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">      
@@ -276,11 +233,9 @@
         </div>
       </div>
       <?php endforeach; wp_reset_postdata(); ?>
-      <?php endif; ?>
     </div>
   </div>
 
-  <?php if($testimonials): ?>
   <div class="container show-xs">
     <h5>Join the 3 Million Canadians who saved by comparing the Market</h5>
     <div class="row">
@@ -322,6 +277,8 @@
       </div>
     </div>
   </div>
-  <?php endif; ?>
 </div>
+<?php endif; ?>
+<!-- End of Testimonials -->
+
 <?php get_footer(); ?>

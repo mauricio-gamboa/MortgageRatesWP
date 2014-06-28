@@ -830,6 +830,10 @@ input#submit:hover {
   line-height: 70px;
 }
 
+#banks-logos .container .row > div img {
+  height: auto;
+}
+
 /*NEWS*/
 .news-box .title,
 .find-rate .title {
@@ -966,6 +970,14 @@ input#submit:hover {
 }
 
 /* Home Tips ----------- */
+
+body.home .home-tip {
+  float: left;
+  min-height: 125px;
+  overflow: hidden;
+  width: 50%;
+}
+
 .home-tip {
   min-height: 125px;
   overflow: hidden;
@@ -976,11 +988,12 @@ input#submit:hover {
 }
 
 .home-tip > img {
+  height: auto;
   max-width: 25%;
 }
 
 .home-tip > div {
-  padding-left: 3%;
+  padding: 0 3%;
   width: 75%;
 }
 
@@ -1121,7 +1134,10 @@ input#submit:hover {
 }
 
 .home-article > img {
-  max-width: 25%;
+  border: 5px solid #e1f5ff;
+  border-radius: 50%;
+  height: auto;
+  width: 20%;
 }
 
 .home-article > div {
@@ -3602,6 +3618,10 @@ body .page + .post-share {
 
   #page-title-wrapper {
     top: 55px;
+  }
+
+  body.home .home-tip {
+    float: none;width: 100%;
   }
 }
 
