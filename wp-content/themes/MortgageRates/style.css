@@ -2181,12 +2181,13 @@ body .page + .post-share {
 /* Rates Lightbox ----------- */
 
 .rates-lb {
-  background: url("images/rates-lb.png") repeat-x scroll 50% 100% #0060C3;
+  background: url("images/rates-lb.png") repeat-x scroll 50% 100% #0060c3;
   border-radius: 4px;
+  margin: 30px 0;
   min-height: 600px;
   padding: 20px;
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 
 .rates-lb .close {

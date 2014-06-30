@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_sidebar('includes-rates-modal'); ?>
 <div id="page-title-wrapper">
   <div class="container">
     <div class="page-title">
@@ -95,7 +96,7 @@
                   </td>
                   <td class="s-rate">
                     <span>3.79%</span>
-                    <a href="" class="btn green-gradient show-m show-s hide-xl">Get This Rate!</a>
+                    <button class="btn green-gradient show-m show-s hide-xl" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                   <td class="s-hold hide-m hide-s">30 Days</td>
                   <td class="hide-m hide-s">
@@ -103,7 +104,7 @@
                     <span>Monthly: 20%</span>
                   </td>
                   <td class="s-payment hide-m hide-s"><span>$1,240</span>
-                    <a href="" class="btn green-gradient">Get This Rate!</a>
+                    <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                 </tr>
                 <tr>
@@ -113,7 +114,7 @@
                   </td>
                   <td class="s-rate">
                     <span>3.79%</span>
-                    <a href="" class="btn green-gradient show-m show-s hide-xl">Get This Rate!</a>
+                    <button class="btn green-gradient show-m show-s hide-xl" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                   <td class="s-hold hide-m hide-s">30 Days</td>
                   <td class="hide-m hide-s">
@@ -121,7 +122,7 @@
                     <span>Monthly: 20%</span>
                   </td>
                   <td class="s-payment hide-m hide-s"><span>$1,240</span>
-                    <a href="" class="btn green-gradient">Get This Rate!</a>
+                    <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                 </tr>
                 <tr>
@@ -131,7 +132,7 @@
                   </td>
                   <td class="s-rate">
                     <span>3.79%</span>
-                    <a href="" class="btn green-gradient show-m show-s hide-xl">Get This Rate!</a>
+                    <button class="btn green-gradient show-m show-s hide-xl" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                   <td class="s-hold hide-m hide-s">30 Days</td>
                   <td class="hide-m hide-s">
@@ -139,7 +140,7 @@
                     <span>Monthly: 20%</span>
                   </td>
                   <td class="s-payment hide-m hide-s"><span>$1,240</span>
-                    <a href="" class="btn green-gradient">Get This Rate!</a>
+                    <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                 </tr>
                 <tr>
@@ -149,7 +150,7 @@
                   </td>
                   <td class="s-rate">
                     <span>3.79%</span>
-                    <a href="" class="btn green-gradient show-m show-s hide-xl">Get This Rate!</a>
+                    <button class="btn green-gradient show-m show-s hide-xl" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                   <td class="s-hold hide-m hide-s">30 Days</td>
                   <td class="hide-m hide-s">
@@ -157,7 +158,7 @@
                     <span>Monthly: 20%</span>
                   </td>
                   <td class="s-payment hide-m hide-s"><span>$1,240</span>
-                    <a href="" class="btn green-gradient">Get This Rate!</a>
+                    <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                 </tr>
                 <tr>
@@ -167,7 +168,7 @@
                   </td>
                   <td class="s-rate">
                     <span>3.79%</span>
-                    <a href="" class="btn green-gradient show-m show-s hide-xl">Get This Rate!</a>
+                    <button class="btn green-gradient show-m show-s hide-xl" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                   <td class="s-hold hide-m hide-s">30 Days</td>
                   <td class="hide-m hide-s">
@@ -175,7 +176,7 @@
                     <span>Monthly: 20%</span>
                   </td>
                   <td class="s-payment hide-m hide-s"><span>$1,240</span>
-                    <a href="" class="btn green-gradient">Get This Rate!</a>
+                    <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                   </td>
                 </tr>
               </tbody>

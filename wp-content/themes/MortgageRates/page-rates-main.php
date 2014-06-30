@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_sidebar('includes-rates-modal'); ?>
 <div id="page-title-wrapper">
   <div class="container">
     <div class="page-title">
@@ -91,7 +92,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -99,7 +100,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -107,7 +108,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -122,7 +123,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -130,7 +131,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -138,7 +139,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -163,7 +164,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -171,7 +172,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -179,7 +180,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -194,7 +195,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -202,7 +203,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -210,7 +211,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -235,7 +236,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -243,7 +244,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -251,7 +252,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -266,7 +267,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -274,7 +275,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -282,7 +283,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -307,7 +308,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -315,7 +316,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -323,7 +324,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
@@ -338,7 +339,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -346,7 +347,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                     <tr>
@@ -354,7 +355,7 @@
                       <td><img src="<?php echo THEME_DIR?>/images/news-1.png"></td>
                       <td>
                         <span>$1,240</span>
-                        <a class="btn green-gradient" href="">Get This Rate!</a>
+                        <button class="btn green-gradient" data-toggle="modal" data-target="#rates-modal">Get This Rate!</button>
                       </td>
                     </tr>
                   </tbody>
