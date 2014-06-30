@@ -4,8 +4,13 @@
 <?php $feautures = get_features(); ?>
 <?php $news_posts = get_posts_by_category('news', 3); ?>
 <?php $mortgage_help_posts = get_posts_by_category('mortgage-help', 3); ?>
+<?php $home_content_page = get_my_page('home-content'); ?>
+<?php $about_page = get_my_page('about'); ?>
 
 <?php get_header('home'); ?>
+
+<!-- The content of this section is populated from the page called "Home Page Content" -->
+<?php if($home_content_page): ?>
 <div id="top" class="home">
   <div class="nav-container hide-xs">
     <div class="container">
@@ -15,11 +20,11 @@
   <div class="home-top">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
-          <h1>Insurance Shopping <br>Made Easy</h1>
-          <p><strong>Save up to $450</strong> or more per year by comparing multiple offers from top rated companies</p>
-          <p><strong>Insurance you're looking for</strong></p>
+        <?php foreach ( $home_content_page as $key=>$post ) : setup_postdata( $post ); ?>
 
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4">
+          <?php the_content(); ?>
+          <!-- This form will get RateHub Data -->
           <form class="home-form clearfix">
             <div class="form-group">
               <select class="form-control">
@@ -31,17 +36,23 @@
             </div>
             <button type="submit" class="btn green-gradient">Go!</button>
           </form>
-
         </div>
+        <?php $video = get_post_meta(get_the_ID(), 'home_video', true); ?>
+        <?php if($video): ?>
         <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-6 col-lg-offset-2 col-lg-6">
           <div id="video">
             <img src="<?php echo THEME_DIR?>/images/video.png" alt="" />
+            <div class="videowrapper"><?php echo $video; ?></div>
           </div>
         </div>
+        <?php endif; ?>
+        <?php endforeach; wp_reset_postdata(); ?>
       </div>
     </div>
   </div>
 </div>
+<?php endif; ?>
+<!-- End of The content of this section is populated from the page called "Home Page Content" -->
 
 <!-- Home Brokers and Banks Logos -->
 <?php if($home_logos): ?>
@@ -125,13 +136,18 @@
 </div>
 <!-- End of RatesHub API Content -->
 
+<!-- About Page Excerpt, the content is populated from the "About" page -->
+<?php if($about_page): ?>
 <div class="more-info-box general-padding">
+  <?php foreach ( $about_page as $key=>$post ) : setup_postdata( $post ); ?>
   <div class="container">
-    <h2>MortgageRates.ca &bull; Canada's Best Mortgage Rates</h2>
-    <p>MortgageRates.ca is your source for the best mortgage rates in Canada. We make it easy to find the? We make it easy to find the most competitive mortgage rates from Canadian banks and mortgage brokers. You can quickly compare fixed and variatickly compare </p>
-    <a href="" class="link-green">Read more <b class="caret"></b></a>
+    <?php the_content(); ?>
+    <a href="<?php the_permalink(); ?>" class="link-green">Read more <b class="caret"></b></a>
   </div>
+  <?php endforeach; wp_reset_postdata(); ?>
 </div>
+<?php endif; ?>
+<!-- End of About Page Excerpt, the content is populated from the "About" page -->
 
 <!-- Steps and Features -->
 <?php if($steps and $feautures): ?>

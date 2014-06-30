@@ -1,4 +1,4 @@
-<?php $contact_page = get_contact_page(); ?>
+<?php $contact_page = get_my_page('contact'); ?>
 
 <?php get_header(); ?>
 <div id="page-title-wrapper">

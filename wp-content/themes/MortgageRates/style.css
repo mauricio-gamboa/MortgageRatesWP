@@ -801,6 +801,23 @@ input#submit:hover {
   width: 100%;
 }
 
+.videowrapper {
+  clear: both;
+  float: none;
+  height: 54%;
+  left: 10%;
+  position: absolute;
+  top: 17%;
+  width: 78%;
+}
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /*Banks Logos*/
 #banks-logos {
   background-color: #f7f7f7;
@@ -944,7 +961,8 @@ input#submit:hover {
   padding-bottom: 60px;
 }
 
-.more-info-box h2 {
+.more-info-box h2,
+.more-info-box h3 {
   margin-top: 0;
   color: #004993;
   font-size: 23px;
@@ -952,6 +970,7 @@ input#submit:hover {
 
 .more-info-box p {
   color: #303030;
+  display: inline;
   font-size: 15px;
   line-height: 25px;
 }
