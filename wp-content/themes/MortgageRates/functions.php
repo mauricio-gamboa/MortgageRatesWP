@@ -68,10 +68,10 @@ function get_team_members() {
   return $team_members;
 }
 
-function get_contact_page() {
+function get_my_page($pageName) {
   global $post;
-  $contact_page = get_posts(array('post_type'=> 'page', 'name' => 'contact', 'posts_per_page' => 1));
-  return $contact_page;
+  $page = get_posts(array('post_type'=> 'page', 'name' => $pageName, 'posts_per_page' => 1));
+  return $page;
 }
 
 function get_works_items() {
