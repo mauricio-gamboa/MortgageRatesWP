@@ -109,3 +109,9 @@ function get_posts_by_category($categoryName, $number) {
   $posts_by_category = get_posts(array('category_name'=> $categoryName, 'posts_per_page' => $number));
   return $posts_by_category;
 }
+
+function get_accordion() {
+  global $post;
+  $accordion = get_posts(array('post_type'=> 'accordion', 'posts_per_page' => -1));
+  return $accordion;
+}
