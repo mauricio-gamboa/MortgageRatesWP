@@ -115,3 +115,9 @@ function get_accordion() {
   $accordion = get_posts(array('post_type'=> 'accordion', 'posts_per_page' => -1));
   return $accordion;
 }
+
+function get_faqs() {
+  global $post;
+  $faqs = get_posts(array('post_type'=> 'faqs', 'posts_per_page' => -1));
+  return $faqs;
+}
