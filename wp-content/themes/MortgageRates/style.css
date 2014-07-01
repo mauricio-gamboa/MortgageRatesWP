@@ -44,8 +44,11 @@ body {
   color: #303030;
 }
 
-a {
+a,
+a:focus {
   color: #8dc63f;
+  outline: none !important;
+  text-decoration: none;
 }
 
 a:hover {
@@ -191,11 +194,19 @@ address {
   padding-right: 25px;
 }
 
-.arrow-3 {
+.arrow-3,
+.arrow-3:hover,
+.arrow-3:focus {
   background: url("images/arrow-3.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
   display: inline-block;
   line-height: normal;
   padding-right: 15px;
+}
+
+.arrow-3.active,
+.arrow-3.active:hover,
+.arrow-3.active:focus {
+  background: url("images/arrow-7.png") no-repeat scroll 100% 50% rgba(0, 0, 0, 0);
 }
 
 .arrow-4 {
@@ -204,6 +215,10 @@ address {
   display: block;
   height: 20px;
   width: 20px;
+}
+
+.hidden-element {
+  display: none;
 }
 
 /*HEADER*/
@@ -1894,6 +1909,7 @@ body .page + .post-share {
 }
 
 .rates-page h2 {
+  margin-bottom: 0;
   padding-top: 20px;
 }
 
@@ -2039,16 +2055,17 @@ body .page + .post-share {
 }
 
 .tool-tip {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-radius: 50px;
   background-color: #c2c2c2;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 15px;
   line-height: 15px;
   text-align: center;
-  font-size: 10px;
-  color: #FFFFFF;
-  font-weight: bold;
+  width: 15px;
 }
 
 .number {
@@ -2144,10 +2161,9 @@ body .page + .post-share {
   background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); /* IE6-9 */
 
-  border-bottom: #eaeaea;
+  border-bottom: medium none #eaeaea;
   margin: 0 -20px;
   padding: 0 20px;
-  padding-bottom: 20px;
 }
 
 .rates-form h4 {
@@ -2167,7 +2183,7 @@ body .page + .post-share {
 }
 
 .rates-form form {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .rates-form form label {
