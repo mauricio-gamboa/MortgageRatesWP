@@ -19,61 +19,73 @@
         <!-- RateHub Related section -->
         <div class="page sub-page rates-page rates-main-page">
           <div class="rates-form">
-            <h4 class="clearfix">Filter Mortgage Rates <a href="#" class="pull-right arrow-3">Hide</a></h4>
-            <form>
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>Mortgage Amount <span class="tool-tip">?</span></label>
-                  <input type="text" class="form-control">
+            <h4 class="clearfix">Filter Mortgage Rates <a href="#" class="pull-right arrow-3 show-hidden">Hide</a></h4>
+            <div class="hidden-element">
+              <form>
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>Mortgage Amount 
+                      <span class="tool-tip" data-toggle="popover" data-placement="top" data-content="The mortgage amount is the total cost of the home you plan to purchase, minus your down payment. If you are refinancing or renewing your mortgage, this is the current value of your mortgage.">?</span>
+                    </label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>Term 
+                      <span class="tool-tip" data-toggle="popover" data-placement="top" data-content="The mortgage term is the length of time you are locked into a certain interest rate. The most common term is 5 years. However, the term can be anywhere from 6 months to 10 years.">?</span>
+                    </label>
+                    <select class="form-control">
+                      <option>5 Year</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>Province 
+                      <span class="tool-tip" data-toggle="popover" data-placement="top" data-content="Select the province that you currently reside in or the province you plan on moving to in order to access the best mortgage rates in your area.">?</span>
+                    </label>
+                    <select class="form-control">
+                      <option>Selected Province</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>Term <span class="tool-tip">?</span></label>
-                  <select class="form-control">
-                    <option>5 Year</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>Mortgage Type 
+                      <span class="tool-tip" data-toggle="popover" data-placement="top" data-content="There are different types of mortgages available. A fixed-rate mortgage doesn't change during your mortgage term while a variable mortgage rate is subject to change based on the lender's prime rate.">?</span>
+                    </label>
+                    <select class="form-control">
+                      <option>Fixed-Closed</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>Amortization 
+                      <span class="tool-tip" data-toggle="popover" data-placement="top" data-content="The amortization period is the total length of time it takes to pay off your mortgage. The most common amortization period is 25 years. Longer amortization periods will reduce your monthly payments, but you will pay more interest over the life of your mortgage.">?</span>
+                    </label>
+                    <select class="form-control">
+                      <option>25 Years</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <label>&nbsp;</label><br>
+                    <button type="submit" class="btn green-gradient">Filter Results</button>
+                  </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>Province <span class="tool-tip">?</span></label>
-                  <select class="form-control">
-                    <option>Selected Province</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>Amortization <span class="tool-tip">?</span></label>
-                  <select class="form-control">
-                    <option>Fixed-Closed</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>Province <span class="tool-tip">?</span></label>
-                  <select class="form-control">
-                    <option>25 Years</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                  <label>&nbsp;</label><br>
-                  <button type="submit" class="btn green-gradient">Filter Results</button>
-                </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
           <div class="single-main-rate">
             <h2 class="clearfix">

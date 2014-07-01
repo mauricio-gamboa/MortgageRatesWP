@@ -26,6 +26,9 @@ function enqueue_scripts() {
   /** REGISTER js/bootstrap.min.js **/
   wp_register_script( 'bootstrapjs', THEME_DIR . '/js/bootstrap.min.js', array( 'jquery' ), '1', false );
   wp_enqueue_script( 'bootstrapjs' );
+
+  wp_register_script( 'main', THEME_DIR . '/js/main.js', array( 'bootstrapjs' ), '1', false );
+  wp_enqueue_script( 'main' );
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
