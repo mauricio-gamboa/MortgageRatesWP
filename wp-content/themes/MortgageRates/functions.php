@@ -89,10 +89,16 @@ function get_testimonials($number) {
   return $testimonials;
 }
 
-function get_calculators() {
+function get_childrenPages() {
   global $post;
-  $calculators = get_posts(array('post_type'=> 'page', 'post_parent' => $post->ID, 'posts_per_page' => 4));
-  return $calculators;
+  $childrenPages = get_posts(array('post_type'=> 'page', 'post_parent' => $post->ID, 'posts_per_page' => 4));
+  return $childrenPages;
+}
+
+function get_childrenByID($id) {
+  global $post;
+  $childrenPages = get_posts(array('post_type'=> 'page', 'post_parent' => $id, 'posts_per_page' => 4));
+  return $childrenPages;
 }
 
 function get_my_posts($number) {

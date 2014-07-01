@@ -1,4 +1,4 @@
-var myFunction = {
+var myFunctions = {
   init: function() {
     jQuery('.tool-tip').popover({
       trigger: 'hover'
@@ -16,6 +16,6 @@ var myFunction = {
 };
 
 jQuery(document).ready(function() {
-  myFunction.init();
-  myFunction.hiddenHandler();
+  myFunctions.init();
+  myFunctions.hiddenHandler();
 });

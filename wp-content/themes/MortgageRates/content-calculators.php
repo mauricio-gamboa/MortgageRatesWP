@@ -1,11 +1,11 @@
-<?php $calculators = get_calculators(); ?>
+<?php $calculators = get_childrenPages(); ?>
 
 <?php if($calculators): ?>
 <?php foreach ( $calculators as $key=>$post ) : setup_postdata( $post ); ?>
 <div class="single-calculator single-calculator-<?php echo $key+1; ?> shadow clearfix">
   <div class="row">
     <div class="col-sm-5 col-md-3 col-lg-3 hide-xs">
-      <?php if (has_post_thumbnail()) : the_post_thumbnail(); endif; ?>
+      <img src="<?php echo THEME_DIR?>/images/calc-<?php echo $key + 1; ?>.png" />
     </div>
     <div class="col-sm-7 col-md-9 col-lg-9">
       <div class="row">
