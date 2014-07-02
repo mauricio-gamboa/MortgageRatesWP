@@ -17,7 +17,6 @@
         endwhile; ?>
         <?php get_sidebar('include-compare'); ?>
         <?php get_sidebar('include-blog'); ?>
-        <?php get_sidebar('include-blog'); ?>
         <?php get_sidebar('include-recent-qa'); ?>
         <?php get_sidebar('include-share'); ?>
       </div>

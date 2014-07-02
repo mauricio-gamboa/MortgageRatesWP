@@ -2892,6 +2892,10 @@ body .page + .post-share {
 
 /* First Time Page ----------- */
 
+.galleries-wrapper {
+  position: relative;
+}
+
 .banner img {
   border-radius: 5px;
   height: auto;
@@ -2917,7 +2921,6 @@ body .page + .post-share {
 
 .gallery-wrapper {
   padding: 15px 25px;
-  overflow: hidden;
 }
 
 .gallery-wrapper > * {
@@ -2925,6 +2928,11 @@ body .page + .post-share {
 }
 
 .gallery-wrapper img {
+  background-color: #cfedff;
+  border: 7px solid #f1faff;
+  border-radius: 50%;
+  height: auto;
+  padding: 7px;
   width: 30%;
 }
 
@@ -2940,7 +2948,9 @@ body .page + .post-share {
 }
 
 .gallery-controller ul {
+  background-color: #e4f5ff;
   margin: 0;
+  min-height: 162px;
 }
 
 .gallery-controller li a {
@@ -2959,6 +2969,10 @@ body .page + .post-share {
   color: #8dc63f;
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
+}
+
+.gallery-controller li.active:first-child a {
+  border-top: none;
 }
 
 .faqs.posts .faq {
