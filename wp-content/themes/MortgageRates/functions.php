@@ -40,7 +40,7 @@ if (!function_exists('morgageRates_setup')) :
     }
 
     // This theme uses wp_nav_menu() in two locations.
-    register_nav_menus( array('primary'   => __( 'Top primary menu')));
+    register_nav_menus( array('primary'   => __( 'Top Menu')));
 
     add_post_type_support('page', 'excerpt');
   }
@@ -130,3 +130,20 @@ function get_faqs() {
   $faqs = get_posts(array('post_type'=> 'faqs', 'posts_per_page' => -1));
   return $faqs;
 }
+
+/**
+ * Register MortgageRate widget areas.
+ */
+function mortgageRates_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Subpages Sidebar',
+    'id'            => 'subpages-sidebar',
+    'description'   => 'The Sidebar that appears on the subpages',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+}
+add_action( 'widgets_init', 'mortgageRates_widgets_init' );

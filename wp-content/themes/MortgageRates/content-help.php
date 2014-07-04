@@ -106,7 +106,7 @@
           <?php else: ?>
           <li>
           <?php endif; ?>
-            <a href="#closing-costs-gallery-<?php echo $key; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
+            <a href="#mortgage_process-gallery-<?php echo $key; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
           </li>
           <?php endforeach; wp_reset_postdata(); ?>
         </ul>
@@ -161,7 +161,7 @@
           <?php else: ?>
           <li>
           <?php endif; ?>
-            <a href="#closing-costs-gallery-<?php echo $key; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
+            <a href="#down_payment-gallery-<?php echo $key; ?>" role="tab" data-toggle="tab"><?php the_title(); ?></a>
           </li>
           <?php endforeach; wp_reset_postdata(); ?>
         </ul>
